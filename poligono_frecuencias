@@ -1,0 +1,9 @@
+Tiempos <-c(11.3, 12.3, 8.3,15.2,9.7, 9.7,12.6, 7.8, 14.2, 9.7, 11.3, 12.6, 8.3,12.3,10.4,8.2,8.0,9.3,15.2,16)
+  
+agru <- Agru <- hist(Tiempos,breaks=c(7.8,9.2,10.6,12,13.4,14.8,16.2), right=F, include.lowest = T)
+tar <- data.frame(agru$mids, agru$counts)
+colnames(tar) <- c("Marca", "Frecuencia")
+agru<-hist(Tiempos,breaks=c(7.8,9.2,10.6,12,13.4,14.8,16.2),labels=T,right=F,include.lowest=T,col="lightblue",xlab="Minutos",ylab="No. de Robots",main="Histograma de la variable tiempo", ylim = c(0,7), xlim=c(8,16))
+par(new = TRUE)
+plot(tar$Marca, tar$Frecuencia,col="red", type="b", lwd=2,axes = F, ann = F, ylim = c(0,7), xlim=c(8,16))
+#por albeiro naranjo
