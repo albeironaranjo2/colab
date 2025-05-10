@@ -1,4 +1,4 @@
-#trabajo 2 corte 2 por albeiro naranjo
+#trabajo 2 corte 2 por Luis Albeiro Naranjo Cortes y Juan David Zarta Arias
 # punto 1 - poligono de frecuencias 
 Tiempos <-c(11.3, 12.3, 8.3,15.2,9.7, 9.7,12.6, 7.8, 14.2, 9.7, 11.3, 12.6, 8.3,12.3,10.4,8.2,8.0,9.3,15.2,16)
 agru <- Agru <- hist(Tiempos,breaks=c(7.8,9.2,10.6,12,13.4,14.8,16.2), right=F, include.lowest = T)
